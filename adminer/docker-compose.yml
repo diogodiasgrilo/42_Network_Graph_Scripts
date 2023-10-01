@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+    networks:
+      - mynetwork
+  mariadb:
+    image: mariadb
+    build:
+      ./mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: top_secret
+      ADMINER_DEFAULT_SERVER: mariadb
+      ADMINER_DEFAULT_USERNAME: diogpere
+      ADMINER_DEFAULT_PASSWORD: 123go
+      ADMINER_DESIGN: nette
+    volumes:
+      - ./data:/var/lib/mysql
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
