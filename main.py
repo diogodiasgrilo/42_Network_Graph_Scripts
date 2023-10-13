@@ -18,7 +18,7 @@ def go_for_it(interactions, project_links, interactions_key, project_url, begin_
     idx = next((i for i, (key, _) in enumerate(interactions.items()) 
                 if key == interactions_key), None)
     if idx is not None:
-        # make an array of the project_url, the begin_at time, the end_at time, and the end_time - begin_time
+        # make an array of the project_url, the begin_at time, the end_at time, and the (end_time - begin_time) time
         total_time = total_time_calc(begin_at_split, end_at_split)
         project_links[idx]["project_urls"].append([start_date, project_url, begin_at_split, end_at_split, total_time])
     interactions[interactions_key] += 1
