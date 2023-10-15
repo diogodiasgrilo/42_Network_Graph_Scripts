@@ -156,7 +156,7 @@ def construct_links_json(interactions, project_links):
 
 def main():
     create_files()
-    # Inputs management and initial users data fetching
+    # Inputs management and initial user data fetching
     student_count, users, black_list, white_list = startup_script()
     
     # Process interactions, project links, and create project_links.js
