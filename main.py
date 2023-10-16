@@ -159,7 +159,7 @@ def main():
     # Inputs management and initial user data fetching
     student_count, users, black_list, white_list = startup_script()
     
-    # Process interactions, project links, and create project_links.js
+    # Process interactions, project links, and also create project_links.js
     interactions, project_links = process_students(users, black_list, white_list, student_count)
     
     # Construct links.js
