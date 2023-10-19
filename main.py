@@ -87,7 +87,7 @@ def startup_script():
     # File path for links.js
     links_file_path = "student_evaluations/links/links.js"
     
-    # Check if links.js file already exists
+    # Check if the links.js file already exists
     if os.path.exists(links_file_path):
         overwrite = input("File 'links.js' already exists. Do you want to overwrite it? (y/n): ")
         if overwrite.lower() == 'n':
