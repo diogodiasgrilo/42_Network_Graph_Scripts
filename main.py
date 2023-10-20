@@ -99,7 +99,7 @@ def startup_script():
     student_count = int(input("How many students (input -1 for all): "))
     # Fetch basic users data from specific campus
     current_month = get_users_data(campus_id)
-    # Create nodes.js
+    # Create the nodes.js file
     make_nodes(campus_id, student_count)
     
     users = []
