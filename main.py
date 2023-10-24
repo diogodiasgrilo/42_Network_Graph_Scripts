@@ -1,4 +1,4 @@
-# Import necessary libraries and modules
+# Import the necessary libraries and modules
 import os
 import csv
 import re
