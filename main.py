@@ -29,7 +29,7 @@ def process_students(users, black_list, white_list, student_count):
     project_links = []
     links_id = 0
     
-    # Iterate through users and their corrected teams
+    # Iterate through the users and their corrected teams
     with tqdm(total=student_count, desc="Processing students", unit="student") as pbar:
         for user in users:
             if pbar.n == student_count:
