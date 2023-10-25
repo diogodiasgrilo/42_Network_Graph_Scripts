@@ -56,7 +56,7 @@ def process_students(users, black_list, white_list, student_count):
                     if not checker_for_campus(evaluatee_login, corrector_login, black_list, white_list):
                         continue
 
-                    # get only the time between the T and the Z in the string example string to split: ""2022-04-11T14:00:00.000Z""
+                    # Get only the time between the T and the Z in the string example string to split: ""2022-04-11T14:00:00.000Z""
                     begin_at = team["begin_at"]
                     end_at = team["filled_at"]
                     begin_at_split = None
