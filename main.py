@@ -94,7 +94,7 @@ def startup_script():
             print("Using existing file.")
             exit()
         
-    # User inputs the campus ID and student count
+    # User inputs the campus ID and the student count
     campus_id = input("Enter the campus_id: ")
     student_count = int(input("How many students (input -1 for all): "))
     # Fetch basic users data from specific campus
