@@ -23,7 +23,7 @@ def go_for_it(interactions, project_links, interactions_key, project_url, begin_
         project_links[idx]["project_urls"].append([start_date, project_url, begin_at_split, end_at_split, total_time])
     interactions[interactions_key] += 1
 
-# Function to process the student data and student interactions
+# Function to process each student's data and interactions
 def process_students(users, black_list, white_list, student_count):
     interactions = {}
     project_links = []
