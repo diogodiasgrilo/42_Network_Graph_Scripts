@@ -115,7 +115,7 @@ def startup_script():
         for row in black_list_reader:
             black_list.append(row[0])
     
-    # Fetch whitelisted users
+    # Fetch whitelisted users list
     white_list = []
     with open(f"data/white_list_{current_month}.csv", mode="r") as white_list_file:
         white_list_reader = csv.reader(white_list_file)
