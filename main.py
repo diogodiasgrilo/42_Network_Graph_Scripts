@@ -108,7 +108,7 @@ def startup_script():
         for row in users_reader:
             users.append(row)
 
-    # Fetch blacklisted users
+    # Fetch blacklisted users list
     black_list = []
     with open("data/black_list.csv", mode="r") as black_list_file:
         black_list_reader = csv.reader(black_list_file)
