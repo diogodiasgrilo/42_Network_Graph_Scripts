@@ -122,7 +122,7 @@ def startup_script():
         for row in white_list_reader:
             white_list.append(row[0])
 
-    # Set student count if not specified
+    # Set student count if not previously specified
     if student_count == -1:
         student_count = len(users)
     
