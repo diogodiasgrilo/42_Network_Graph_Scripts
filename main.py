@@ -139,7 +139,7 @@ def construct_links_json(interactions, project_links):
     json_string = json.dumps(links, indent=4)
     project_links_string = json.dumps(project_links, indent=4)
 
-    # Create a folder and save data to CSV files
+    # Create a folder and save the data to CSV files
     csv_folder = "student_evaluations"
     os.makedirs(csv_folder, exist_ok=True)
 
