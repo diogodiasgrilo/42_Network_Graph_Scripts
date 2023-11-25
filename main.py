@@ -162,7 +162,7 @@ def main():
     # Process interactions, project links, and also create project_links.js
     interactions, project_links = process_students(users, black_list, white_list, student_count)
     
-    # Construct links.js file
+    # Construct the links.js file
     construct_links_json(interactions, project_links)
     
     # Convert JSON to SQL
