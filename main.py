@@ -165,7 +165,7 @@ def main():
     # Construct the links.js file
     construct_links_json(interactions, project_links)
     
-    # Convert JSON to SQL
+    # Convert from JSON to SQL
     convert_all()
 
 if __name__ == "__main__":
