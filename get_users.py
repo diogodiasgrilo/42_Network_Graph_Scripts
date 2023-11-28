@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 from ptapi42.api42 import Api42
 
-# have all the months in a list
+# Have all the months in a list
 months = ["january", "february", "march", "april", "may", "june", "july", "august",
           "september", "october", "november", "december"]
 
