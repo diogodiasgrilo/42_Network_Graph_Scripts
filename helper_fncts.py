@@ -35,7 +35,7 @@ def generate_project_url(project_name, project_user_id):
     dont_append = ["cpp", "born2beroot", "pipex", "cub3d", "netpractice", "ft_transcendence"
                     "so_long", "minitalk", "inception", "minirt", "ft_irc", "webserv", "libasm"]
     
-    # Modify the project name based on conditions
+    # Modify the project name based on the conditions
     if not any(x in project_name for x in dont_append):
         project_name = "42cursus-" + project_name
     elif "cpp" in project_name:
