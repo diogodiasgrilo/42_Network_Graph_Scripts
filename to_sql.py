@@ -7,7 +7,7 @@ def json_to_sql_nodes(json_file, sql_file, table_name):
         with open(json_file, 'r') as json_file:
             data = json.load(json_file)
 
-        # Define your SQL schema here
+        # Define the SQL schema
         sql_schema = f"""
             CREATE TABLE IF NOT EXISTS {table_name} (
                 id INT PRIMARY KEY,
