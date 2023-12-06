@@ -22,7 +22,7 @@ def json_nodes_converter():
         nodes_json_str = match.group(1)
         # Parse the extracted JSON data
         nodes = json.loads(nodes_json_str)
-        # Serialize Python data to JSON
+        # Serialize the Python data to JSON
         json_data = json.dumps(nodes, indent=4)  # You can use 'indent' to format the JSON nicely
 
         # Write the JSON data to a file (e.g., nodes.json)
