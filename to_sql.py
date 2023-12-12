@@ -16,7 +16,7 @@ def json_to_sql_nodes(json_file, sql_file, table_name):
             );
         """
 
-        # Open SQL file for writing (creates it if it doesn't exist)
+        # Open the SQL file for writing (creates it if it doesn't exist)
         with open(sql_file, 'w') as sql_output:
             sql_output.write(sql_schema)
 
