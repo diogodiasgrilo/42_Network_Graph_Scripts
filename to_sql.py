@@ -83,7 +83,7 @@ def json_to_sql_project_links(json_file, sql_file_prefix):
             data = json.load(json_file)
 
         parent_id = 0
-        # Extract and create SQL tables for each project_urls block
+        # Extract and create the SQL tables for each project_urls block
         for item in data:
             table_name = f"project_{item['links_node_id']}"
             sql_file = f"{sql_file_prefix}_{table_name}.sql"  # Use a separate variable for the SQL file name
