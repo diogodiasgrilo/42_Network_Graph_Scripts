@@ -15,7 +15,7 @@ def json_nodes_converter():
     with open("./student_evaluations/nodes/nodes.js", "r") as js_file:
         js_code = js_file.read()
 
-    # Use regular expression to extract the 'nodes' variable
+    # Use a regular expression to extract the 'nodes' variable
     match = re.search(r"var nodes = (\[.*?\]);", js_code, re.DOTALL)
 
     if match:
