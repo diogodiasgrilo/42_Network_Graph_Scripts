@@ -43,7 +43,7 @@ def json_links_converter():
         links_json_str = match.group(1)
         # Parse the extracted JSON data
         links = json.loads(links_json_str)
-        # Serialize Python data to JSON
+        # Serialize the Python data to JSON
         json_data = json.dumps(links, indent=4)  # You can use 'indent' to format the JSON nicely
 
         # Write the JSON data to a file (e.g., links.json)
