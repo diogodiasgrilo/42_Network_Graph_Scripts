@@ -7,7 +7,7 @@ with open('./student_evaluations/links.js', 'r') as file:
 # Parse the data as JSON
 links = json.loads(data)
 
-# Create sets to store the pairs and identify flipped pairs
+# Create sets to store the pairs and identify the flipped pairs
 pairs_set = set()
 flipped_pairs = set()
 
