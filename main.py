@@ -11,7 +11,7 @@ from create_nodes import make_nodes
 from get_users import get_users_data
 from to_sql import *
 
-# Initialize the 42-API connection
+# Initialize the 42 API connection
 api: Api42 = Api42(requests_per_second=8, raises=True, log_lvl="WARNING")
 
 def go_for_it(interactions, project_links, interactions_key, project_url, begin_at_split, end_at_split, start_date):
