@@ -10,7 +10,7 @@ months = ["january", "february", "march", "april", "may", "june", "july", "augus
 api: Api42 = Api42(requests_per_second=8, raises=True, log_lvl="WARNING")
 
 def get_users_data(campus_id):
-    #find the current month
+    # Find the current month
     current_month = months[datetime.now().month - 1]
     print("Is there a piscine ongoing? (y/n)")
     ongoing_piscine = input()
