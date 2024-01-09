@@ -67,7 +67,7 @@ def json_project_links_converter():
         # Serialize Python data to JSON
         json_data = json.dumps(project_links, indent=4)  # You can use 'indent' to format the JSON nicely
 
-        # Write the JSON data to a file (e.g., project_links.json)
+        # Write the JSON data to a file (e.g.,project_links.json)
         with open('./student_evaluations/project_links/project_links.json', 'w') as json_file:
             json_file.write(json_data)
     else:
