@@ -1,6 +1,6 @@
 import json
 
-# Read the data from the links.js file
+#Read the data from the links.js file
 with open('./student_evaluations/links.js', 'r') as file:
     data = file.read().replace('var links = ', '')[:-1]
 
