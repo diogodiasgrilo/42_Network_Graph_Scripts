@@ -4,7 +4,7 @@ import json
 from datetime import datetime, timedelta
 from ptapi42.api42 import Api42
 
-# Initialize the API connection
+#Initialize the API connection
 api: Api42 = Api42(requests_per_second=8, raises=True, log_lvl="WARNING")
 
 # Function to fetch the user's corrected teams
