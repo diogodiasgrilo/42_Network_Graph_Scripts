@@ -11,7 +11,7 @@ def convert_all():
     json_to_sql_project_links("./student_evaluations/project_links/project_links.json", "./student_evaluations/project_links/project_links.sql")
 
 def json_nodes_converter():
-    # Read the JavaScript file(nodes.js)
+    #Read the JavaScript file(nodes.js)
     with open("./student_evaluations/nodes/nodes.js", "r") as js_file:
         js_code = js_file.read()
 
