@@ -15,7 +15,7 @@ def get_user_image(user_id):
 def make_nodes(campus_id, student_count):
     nodes_file_path = "student_evaluations/nodes/nodes.js"
     
-    # Check if nodes.js file already exists
+    #Check if nodes.js file already exists
     if os.path.exists(nodes_file_path):
         overwrite = input("File 'nodes.js' already exists. Do you want to overwrite it? (y/n): ")
         if overwrite.lower() == 'n':
